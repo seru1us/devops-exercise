@@ -1,11 +1,14 @@
 language: python
 
+python:
+  - "3.7.6"
+
 services:
   - docker
 
 before_install:
   - docker build -t devops-exercise .
-  - docker run -d -p 127.0.0.1:5000:5000 -it devops-exercise /bin/sh -c "cd /home/flaskuser; python tests.py;"
+  - docker run -d -p 127.0.0.1:5000:5000 -it devops-exercise
   - docker ps -a
 
   script:
