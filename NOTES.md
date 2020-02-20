@@ -17,3 +17,7 @@ Also, as I'm naturally interfacing directly with this api using something like c
 
 Naturally, in most instances with pure docker we would be [utilizing docker-compose and mounting volumes](https://docs.docker.com/storage/volumes/) as persistent storage. After glancing at the "data" folder, this *definitely* seems as if it qualifies as some kind of persistent data store. I don't have the luxury of asking the dev if the contents of this will change, but I would like to mount it as a volume as opposed to copying it out at each build.
 
+## Documentation and comments
+
+I am a huge proponent of verbose documentation and comments. Given the time constraint, I couldn't maintain my preferred level of verbosity. For examples of how I normally document code, [please refer to other "excersies" I have done for interviews.](https://github.com/seru1us/check-publics3)
+
