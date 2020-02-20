@@ -18,6 +18,7 @@ EXPOSE 5000
 # Now let's invite the app to its new home.
 COPY app/ app/
 COPY data/ data/
+COPY tests.py .
 RUN chown -R flaskuser:flaskuser ./
 USER flaskuser 
 # And take it for a spin.

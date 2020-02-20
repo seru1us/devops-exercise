@@ -21,7 +21,23 @@ This exercise provides a "thing" REST API.
 
 ## Deployment
 
-TODO
+Build typically with Docker locally, or by using docker-compose.yml.
+
+```local sh
+git clone seru1us/devops-exercise
+cd devops-exercise
+docker build -t devops-excersise .
+docker run -p 5000:5000 -it devops-excersise
+```
+
+Or, you can utilize the included docker-compose file.
+
+```local sh
+git clone seru1us/devops-exercise
+cd devops-exercise
+docker-compose up
+```
+
 
 ## Testing
 
