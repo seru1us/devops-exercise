@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/seru1us/devops-exercise.svg?branch=master)](https://travis-ci.org/seru1us/devops-exercise)
+
 # DevOps Exercise
 
 This project is meant to test skills for the VoteShield DevOps Engineer role. What it does is not that important.
