@@ -21,3 +21,8 @@ Naturally, in most instances with pure docker we would be [utilizing docker-comp
 
 I am a huge proponent of verbose documentation and comments. Given the time constraint, I couldn't maintain my preferred level of verbosity. For examples of how I normally document code, [please refer to other "excersies" I have done for interviews.](https://github.com/seru1us/check-publics3)
 
+## Testing pipeline and Travis
+
+Given more time, I would have added a lot more testing than the initial "does it build and run" check. A few big TODOs here would include testing the API endpoints directly, checking the json schema (if applicable), and checking response data against the json data source. Also, a lot of the values in Travis are currently hard-coded- I would have them share versions across the repo.
+
+For Security Testing, there is a lot of room for improvement as well. Ideally the docker images would be scanned as well as the dependencies in the python source verified against a CVE database. While not relevant in this repo, Secret Management is extremely important and secret detection should definitely be in place to prevent hard-coded credentials.
