@@ -46,8 +46,8 @@ def thing_data(thing):
 
 
 @app.route("/things/<thing>/something", methods=['GET'])
-def thing_something(thing):
-    raise NotImplementedError()
+def trigger_error():
+    division_by_zero = 1 / 0
 
 
 def pretty_json(arg):
