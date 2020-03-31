@@ -13,3 +13,7 @@ before_install:
 
 script:
   - python tests.py
+
+env:
+  global:
+    - dsn=$dsn
