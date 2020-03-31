@@ -3,10 +3,16 @@
 
 from flask import Flask
 from flask import make_response
-
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
 import os
 import json
 from werkzeug.exceptions import NotFound
+
+sentry_sdk.init(
+    dsn=os.environ.get('dsn'),
+    integrations=[FlaskIntegration()]
+)
 
 file_dirname = os.path.dirname(os.path.realpath(__file__))
 app = Flask(__name__)
