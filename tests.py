@@ -18,6 +18,7 @@ class TestCase(unittest.TestCase):
     def test_users_page(self):
         response = self.app.get('/things', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
+        division_by_zero = 1 / 0
 
 
 if __name__ == '__main__':
